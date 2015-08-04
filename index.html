@@ -1,0 +1,77 @@
+<!-- YOUR NAME HERE
+     DATE
+-->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Best webpage ever!</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <script src="script.js" type="text/javascript"></script>
+
+                <!--Load the AJAX API-->
+                <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <script type="text/javascript">
+                  google.load('visualization', '1.0', {'packages':['corechart']});
+                </script>
+        </head>
+        <body>
+   
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                <h2>Wiki</h2>
+                <h3>Docter</h3>
+                </div>
+                <div class="row">
+            <input id="searchTerm" placeholder="Enter a Wiki page to diagnose..."/>
+            
+            </div>
+            <br />
+            <a id="showTxt" tabindex="0" class="btn btn-lg btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="text" data-content="">Show Wiki Page</a>
+            <a id="randomSelection" class="btn btn-lg btn-default" role="button">Random</a>
+            
+            <a id="saveSearch" class="btn btn-lg btn-default" role="button">Save Search</a>
+             <div class="row">
+                    <!--Div that will hold the pie chart-->
+                    <div class="row">
+                        <div id="h2"></div>
+                    </div>
+                    <!--Div that will hold the pie chart-->
+                    <div class="col-md-6">
+                        <div id="h3"></div>
+                    </div>
+            </div>
+         </div>
+            <div id="results"></div>
+            
+              <body>
+                <div class="row">
+                    <!--Div that will hold the pie chart-->
+                    <div class="col-md-6">
+                        <div id="chart_div"></div>
+                    </div>
+                    <!--Div that will hold the pie chart-->
+                    <div class="col-md-6">
+                        <div id="chart_div2"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class = "col-md-9">
+                        <div id="chart_div3"></div>
+                    </div>
+                <div class = "col-md-3">
+                    <a id="clearSearch" class="btn btn-lg btn-default" role="button">Clear Saved Searches</a>
+                </div>
+        </div>
+                </div>
+ 
+              </body>
+            </html>
+            
+        </body>
+    </html>

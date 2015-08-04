@@ -1,0 +1,72 @@
+/*
+    YOUR NAME's CSS File
+    DATE
+*/
+h2{
+    display: inLine;
+    font-size: 100px;
+}
+h3 {
+    display:inLine;
+    font-size:100px;
+    color:#4682B4;
+}
+
+.btn-primary {
+    background-color:#4682B4;    
+}
+
+
+
+#results {
+	color: #AAA;
+}
+
+.positive {
+   color: #7ACC7A;
+}
+
+.negative {
+    	color: #FF4747;
+}
+
+.header {
+    text-align: center;
+    margin: auto 0px;
+}
+
+
+#searchTerm{
+    font-size:25px;
+    width: 500px;
+    height: 40px;
+}
+
+#showTxt {
+    width: 21%;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+
+#chart_div{
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+}
+
+#chart_div2{
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+#chart_div3{
+    width: 25%;
+    margin: 5px;
+    padding: 10px;
+    
+}
