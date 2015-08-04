@@ -107,11 +107,24 @@ $("#searchTerm").val(replaceWord);
 	 function callWikipedia() {
 		   	var searchTerm = $("#searchTerm").val();
 		   	$("#results").html("");
-		    $.getJSON( "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles="+searchTerm, function( data ) {
-			    $.each( data["query"]["pages"], function( key, val ) {
-                        printWithSentiment(val["extract"].split(" "));
-			  	});
-			});
+	        $.ajax({
+		        type: "GET",
+		        url: "https://en.wikipedia.org/w/api.php?format=json&callback=?&action=query&prop=extracts&exintro=&explaintext=&titles="+searchTerm,
+		        contentType: "application/json; charset=utf-8",
+		        async: false,
+		        dataType: "json",
+		        crossDomain: true,
+		        success: function (data, textStatus, jqXHR) {
+	                if(data["query"]){
+					    $.each( data["query"]["pages"], function( key, val ) {
+		                        printWithSentiment(val["extract"].split(" "));
+					  	});
+					}
+		        },
+		        error: function (errorMessage) {
+		        	console.log(errorMessage);
+		        }
+		    });
 	 };
 
    //$("#search").click(callWikipedia);
